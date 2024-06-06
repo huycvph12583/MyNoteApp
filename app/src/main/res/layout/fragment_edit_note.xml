@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.screen.EditNoteScreen.EditNoteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_EditNoteHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:drawableStart="@drawable/ic_back"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Edit Note"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_EditNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pink_border"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter the title"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_EditNoteHeading"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/edt_EditNoteDesc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/pink_border"
+            android:fontFamily="@font/poppins"
+            android:gravity="top"
+            android:hint="Enter the description"
+            android:padding="12dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_EditNoteSaveData"
+            app:layout_constraintTop_toBottomOf="@+id/edt_EditNoteTitle"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <Button
+            android:id="@+id/btn_EditNoteSaveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pink_border"
+            android:drawableEnd="@drawable/ic_note_add"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/poppins"
+            android:gravity="right"
+            android:paddingEnd="12dp"
+            android:text="Save Note"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_EditNoteDeleteData"
+            app:layout_constraintStart_toStartOf="@+id/edt_EditNoteDesc" />
+
+        <Button
+            android:id="@+id/btn_EditNoteDeleteData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pink_border"
+            android:drawableEnd="@drawable/ic_delete"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:text="Delete Note"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

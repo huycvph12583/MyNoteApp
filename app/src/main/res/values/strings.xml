@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">MyNoteApp</string>
+    <string name="app_name">Notes App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_description_app">Your Simple Notes App is a handy tool that helps users easily create, organize, and manage personal notes. With a friendly and easy-to-use interface, the application allows users to quickly record ideas, tasks and important information anytime, anywhere. Basic features include creating, editing, and deleting notes</string>
 </resources>
